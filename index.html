@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leon Begiristain</title>
+  <meta name="description" content="Leon Begiristain — AI researcher. Publications, news, and contact." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    // Set theme before first paint to avoid a flash.
+    (function () {
+      try {
+        var t = localStorage.getItem("leon-theme");
+        if (!t) {
+          t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-list" id="navList">
+        <li><a href="#about" class="nav-link is-active" data-section="about">About</a></li>
+        <li><a href="#publications" class="nav-link" data-section="publications">Publications</a></li>
+        <li><a href="#random" class="nav-link" data-section="random">Random</a></li>
+      </ul>
+      <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66l1.41-1.41M4.93 19.07l1.41-1.41m0-11.32L4.93 4.93m14.14 14.14l-1.41-1.41M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+      <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- ============ SECTION 1: ABOUT ============ -->
+    <section id="about" class="section section-about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="visually-hidden">About</h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img id="profilePhoto" src="assets/profile.svg" alt="Portrait of Leon Begiristain" />
+        </div>
+        <div class="about-body">
+          <h1 id="profileName" class="profile-name">Leon Begiristain</h1>
+          <p id="profileRole" class="profile-role"></p>
+          <p id="profileBlurb" class="profile-blurb"></p>
+          <ul id="profileLinks" class="profile-links" aria-label="Contact and profiles"></ul>
+        </div>
+      </div>
+
+      <div class="news">
+        <h2 class="news-heading">News</h2>
+        <ul id="newsList" class="news-list"></ul>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 2: PUBLICATIONS ============ -->
+    <section id="publications" class="section section-publications" aria-labelledby="pub-heading">
+      <h2 id="pub-heading" class="section-title">Publications</h2>
+      <div id="pubList" class="pub-list"></div>
+    </section>
+
+    <!-- ============ SECTION 3: RANDOM ============ -->
+    <section id="random" class="section section-random" aria-labelledby="random-heading">
+      <h2 id="random-heading" class="section-title">Random</h2>
+      <p class="random-placeholder">Nothing here yet.</p>
+      <!-- Add whatever you want in this section: blog posts, notes, photos, links... -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Leon Begiristain. Built with plain HTML, CSS, and JS.</p>
+  </footer>
+
+  <script src="data/profile.js"></script>
+  <script src="data/news.js"></script>
+  <script src="data/publications.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
