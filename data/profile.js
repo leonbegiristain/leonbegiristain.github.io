@@ -10,7 +10,7 @@ window.PROFILE = {
     "modeling abilities of video world models. Our goal is to increase model understanding " +
     "of basic physics principles, in order to increase controllability, interpretability and " +
     "robustness of world models.",
-  photo: "assets/profile.svg",
+  photo: "assets/leon.jpg",
   links: {
     email: "leonbegiristain@gmail.com",
     github: "https://github.com/leonbegiristain",
