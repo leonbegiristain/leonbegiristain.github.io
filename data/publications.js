@@ -44,7 +44,7 @@ window.PUBLICATIONS = [
     authors: ["Christian Homeyer", "Leon Begiristain", "Christoph Schnörr"],
     venue: "ICCV 2025 Workshop",
     year: 2025,
-    figure: "assets/droid-splat.png",
+    figure: "assets/droidsplat.png",
     description:
       "Combining end-to-end SLAM tracker with monocular depth priors and 3D Gaussian Splatting rendering.",
     links: {
