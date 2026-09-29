@@ -18,6 +18,7 @@
   --border-strong: #d4d3ca;
   --accent: #9a3412;          /* burnt sienna — academic but not navy-boring */
   --accent-soft: #f4e6df;
+  --pattern: #deddd5;         /* background dot grid */
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.05);
 
   --maxw: 820px;
@@ -36,6 +37,7 @@
   --border-strong: #3c3b32;
   --accent: #f0956b;
   --accent-soft: #33241c;
+  --pattern: #2a2a23;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.4);
 }
 
@@ -49,13 +51,16 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: radial-gradient(var(--pattern) 1.2px, transparent 1.6px);
+  background-size: 22px 22px;
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-sans);
   font-size: 17px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-  transition: background var(--transition), color var(--transition);
+  transition: background-color var(--transition), color var(--transition);
 }
 
 a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
