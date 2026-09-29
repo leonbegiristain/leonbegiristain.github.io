@@ -15,7 +15,7 @@ window.PUBLICATIONS = [
     authors: ["Leon Begiristain", "Olaf Dünkel", "Adam Kortylewski"],
     venue: "Preprint",
     year: 2026,
-    figure: "assets/cronos.png",
+    figure: "assets/cronos.jpg",
     description:
       "CRONOS evaluates the ability of video models to generate physically consistent outcomes under visual interventions of the input.",
     links: {
@@ -30,7 +30,7 @@ window.PUBLICATIONS = [
     authors: ["Wufei Ma", "et. al."],
     venue: "CVPR 2026 Findings",
     year: 2026,
-    figure: "assets/unrealspace.png",
+    figure: "assets/unrealspace.jpg",
     description:
       "UnrealSpace presents a framework to unify the evaluation of multiple spatial understanding and reasoning tasks.",
     links: {
@@ -44,7 +44,7 @@ window.PUBLICATIONS = [
     authors: ["Christian Homeyer", "Leon Begiristain", "Christoph Schnörr"],
     venue: "ICCV 2025 Workshop",
     year: 2025,
-    figure: "assets/droidsplat.png",
+    figure: "assets/droidsplat.jpg",
     description:
       "Combining end-to-end SLAM tracker with monocular depth priors and 3D Gaussian Splatting rendering.",
     links: {

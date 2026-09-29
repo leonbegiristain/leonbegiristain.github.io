@@ -289,7 +289,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   background: var(--bg);
 }
-.pub-figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.pub-figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
 
 .pub-title {
   font-family: var(--font-serif);
